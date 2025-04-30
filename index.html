@@ -48,8 +48,17 @@
       z-index: 2;
       animation: floating 5s ease-in-out infinite;
       transition: transform 0.3s ease;
-      overflow-y: auto;  /* Allow scrolling inside */
+      overflow-y: scroll;  /* Allow scrolling inside */
       max-height: 85vh;  /* Set max height to allow scrolling */
+    }
+
+    /* Hide the scrollbar */
+    .container::-webkit-scrollbar {
+      display: none; /* Hides the scrollbar in webkit browsers (Chrome, Safari) */
+    }
+
+    .container {
+      scrollbar-width: none; /* Hides the scrollbar in Firefox */
     }
 
     @keyframes floating {
