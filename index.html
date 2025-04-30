@@ -48,8 +48,9 @@
       z-index: 2;
       animation: floating 5s ease-in-out infinite;
       transition: transform 0.3s ease;
-      overflow-y: scroll;  /* Allow scrolling inside */
-      max-height: 85vh;  /* Set max height to allow scrolling */
+      overflow: hidden;  /* Hide scrollbars */
+      overflow-y: scroll;  /* Allow vertical scroll */
+      max-height: 85vh;  /* Max height for scrolling */
     }
 
     /* Hide the scrollbar */
