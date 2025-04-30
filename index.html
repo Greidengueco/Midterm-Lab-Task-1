@@ -1,1 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Midterm Lab Task 1 - Solo Leveling Floating System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Share Tech Mono', monospace;
+      background: black;
+      color: #00f0ff;
+    }
+
+    body {
+      background: url('41b49324-8de0-4eeb-ba59-b8c1cda37146.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.8);
+      border: 2px solid #00f0ff;
+      padding: 40px;
+      max-width: 900px;
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 50px rgba(0, 240, 255, 0.5);
+      position: absolute;
+      z-index: 2;
+      animation: floating 5s ease-in-out infinite;
+      transition: transform 0.3s ease;
+    }
+
+    @keyframes floating {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8em;
+      color: #00f0ff;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #00f0ff;
+      padding-bottom: 10px;
+    }
+
+    h2, h3 {
+      margin-top: 20px;
+      color: #ff3c57;
+      font-size: 1.5em;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 0 15px #00f0ff;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .system-btn {
+      padding: 12px 30px;
+      background: transparent;
+      border: 2px solid #00f0ff;
+      color: #00f0ff;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s ease;
+      transform: scale(1);
+    }
+
+    .system-btn:hover {
+      background-color: #00f0ff;
+      color: black;
+      transform: scale(1.1); /* Zoom effect on hover */
+    }
+
+    .system-btn:active {
+      transform: scale(1.05); /* Slight shrink when clicked */
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>MIDTERM LAB TASK 1</h1>
+
+    <h2>Step-by-Step Process</h2>
+
+    <h3>Step 1: Preparing the Data</h3>
+    <ul>
+      <li>Loaded the raw file</li>
+      <li>Adjusted column width and height</li>
+      <li>Trimmed extra spaces and words</li>
+      <li>Removed empty (Null) values</li>
+      <li>Removed duplicate entries</li>
+    </ul>
+
+    <h3>Step 2: Normalization Process</h3>
+    <ul>
+      <li>Applied First Normal Form (1NF)</li>
+      <li>Split tables based on Second Normal Form (2NF)</li>
+      <li>Applied Second Normal Form (2NF)</li>
+      <li>Created a physical data model based on normalization</li>
+    </ul>
+
+    <h3>Step 3: Before Data Cleaning</h3>
+    <img src="https://raw.githubusercontent.com/Greidengueco/Midterm-Lab-Task-1/main/raw.png" alt="Before Data Cleaning" />
+
+    <h3>Step 4: After Data Cleaning</h3>
+    <img src="https://raw.githubusercontent.com/Greidengueco/Midterm-Lab-Task-1/main/cleaned.png" alt="After Data Cleaning" />
+
+    <h3>Physical Data Model</h3>
+    <img src="https://raw.githubusercontent.com/Greidengueco/Midterm-Lab-Task-1/main/model.png" alt="Physical Data Model" />
+
+    <div class="button-row">
+      <a href="https://greidengueco.github.io/" class="system-btn">BACK TO PORTFOLIO</a>
+      <a href="https://github.com/Greidengueco/Midterm-Lab-Task-1" class="system-btn" target="_blank">VIEW ON GITHUB</a>
+    </div>
+  </div>
+
+</body>
+</html>
 
