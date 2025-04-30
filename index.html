@@ -20,14 +20,17 @@
     }
 
     body {
-      background: url('41b49324-8de0-4eeb-ba59-b8c1cda37146.png') no-repeat center center fixed;
-      background-size: cover;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       padding: 40px 20px;
-      overflow-x: hidden;
-      position: relative;
+      overflow: auto; /* Enable scrolling */
+    }
+
+    .content {
+      max-height: 100vh; /* Make sure content is within the viewport */
+      overflow-y: auto; /* Enable vertical scrolling */
+      width: 100%;
     }
 
     .container {
@@ -38,7 +41,7 @@
       width: 100%;
       border-radius: 15px;
       box-shadow: 0 0 50px rgba(0, 240, 255, 0.5);
-      position: absolute;
+      position: relative;
       z-index: 2;
       animation: floating 5s ease-in-out infinite;
       transition: transform 0.3s ease;
@@ -127,43 +130,44 @@
 </head>
 <body>
 
-  <div class="container">
-    <h1>MIDTERM LAB TASK 1</h1>
+  <div class="content">
+    <div class="container">
+      <h1>MIDTERM LAB TASK 1</h1>
 
-    <h2>Step-by-Step Process</h2>
+      <h2>Step-by-Step Process</h2>
 
-    <h3>Step 1: Preparing the Data</h3>
-    <ul>
-      <li>Loaded the raw file</li>
-      <li>Adjusted column width and height</li>
-      <li>Trimmed extra spaces and words</li>
-      <li>Removed empty (Null) values</li>
-      <li>Removed duplicate entries</li>
-    </ul>
+      <h3>Step 1: Preparing the Data</h3>
+      <ul>
+        <li>Loaded the raw file</li>
+        <li>Adjusted column width and height</li>
+        <li>Trimmed extra spaces and words</li>
+        <li>Removed empty (Null) values</li>
+        <li>Removed duplicate entries</li>
+      </ul>
 
-    <h3>Step 2: Normalization Process</h3>
-    <ul>
-      <li>Applied First Normal Form (1NF)</li>
-      <li>Split tables based on Second Normal Form (2NF)</li>
-      <li>Applied Second Normal Form (2NF)</li>
-      <li>Created a physical data model based on normalization</li>
-    </ul>
+      <h3>Step 2: Normalization Process</h3>
+      <ul>
+        <li>Applied First Normal Form (1NF)</li>
+        <li>Split tables based on Second Normal Form (2NF)</li>
+        <li>Applied Second Normal Form (2NF)</li>
+        <li>Created a physical data model based on normalization</li>
+      </ul>
 
-    <h3>Step 3: Before Data Cleaning</h3>
-    <img src="https://github.com/user-attachments/assets/e0375d56-cc93-4908-9492-90f4aa3642d7" alt="Before Data Cleaning" />
+      <h3>Step 3: Before Data Cleaning</h3>
+      <img src="https://github.com/user-attachments/assets/e0375d56-cc93-4908-9492-90f4aa3642d7" alt="Before Data Cleaning" />
 
-    <h3>Step 4: After Data Cleaning</h3>
-    <img src="https://github.com/user-attachments/assets/a39d301b-a79e-4026-9ca3-8fd579b1f356" alt="After Data Cleaning" />
+      <h3>Step 4: After Data Cleaning</h3>
+      <img src="https://github.com/user-attachments/assets/a39d301b-a79e-4026-9ca3-8fd579b1f356" alt="After Data Cleaning" />
 
-    <h3>Physical Data Model</h3>
-    <img src="https://github.com/user-attachments/assets/70b1ba2e-8dbc-4e3e-b655-dd9f3a6beaf2" alt="Physical Data Model" />
+      <h3>Physical Data Model</h3>
+      <img src="https://github.com/user-attachments/assets/70b1ba2e-8dbc-4e3e-b655-dd9f3a6beaf2" alt="Physical Data Model" />
 
-    <div class="button-row">
-      <a href="https://greidengueco.github.io/" class="system-btn">BACK TO PORTFOLIO</a>
-      <a href="https://github.com/Greidengueco/Midterm-Lab-Task-1" class="system-btn" target="_blank">VIEW ON GITHUB</a>
+      <div class="button-row">
+        <a href="https://greidengueco.github.io/" class="system-btn">BACK TO PORTFOLIO</a>
+        <a href="https://github.com/Greidengueco/Midterm-Lab-Task-1" class="system-btn" target="_blank">VIEW ON GITHUB</a>
+      </div>
     </div>
   </div>
 
 </body>
 </html>
-
