@@ -17,20 +17,23 @@
       font-family: 'Share Tech Mono', monospace;
       background: black;
       color: #00f0ff;
-    }
-
-    body {
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    body {
       padding: 40px 20px;
-      overflow: auto; /* Enable scrolling */
+      overflow-x: hidden;
     }
 
     .content {
-      max-height: 100vh; /* Make sure content is within the viewport */
-      overflow-y: auto; /* Enable vertical scrolling */
       width: 100%;
+      max-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .container {
@@ -45,6 +48,8 @@
       z-index: 2;
       animation: floating 5s ease-in-out infinite;
       transition: transform 0.3s ease;
+      overflow-y: auto;  /* Allow scrolling inside */
+      max-height: 85vh;  /* Set max height to allow scrolling */
     }
 
     @keyframes floating {
@@ -133,6 +138,11 @@
   <div class="content">
     <div class="container">
       <h1>MIDTERM LAB TASK 1</h1>
+
+      <p style="color: #ff3c57; font-size: 1.2em; text-align: center;">
+        This portfolio shows how I cleaned and organized a transactional database by applying data normalization.
+        The dataset has multiple related tables to improve structure and remove duplicate data.
+      </p>
 
       <h2>Step-by-Step Process</h2>
 
